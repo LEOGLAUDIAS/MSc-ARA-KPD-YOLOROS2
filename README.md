@@ -1,12 +1,14 @@
 # Assignment
-Robotics Simulations Using ROS2 (TheConstruct.ai)
+Keypoint Detection Using YOLOv8 and ROS2 in a Simulated Environment
 
-The purpose of this project was to design, implement, and test a simulated autonomous robot system using the TheConstruct.ai ROS2 workspace. The problem addressed was enabling a differential drive robot to navigate a maze-like environment while avoiding obstacles and interacting with a human operator.
+This project demonstrates the integration of YOLOv8-Pose with ROS2 Humble to perform real-time human keypoint detection in a Gazebo-based simulated environment. A mobile two-wheeled robot equipped with an RGB camera observes a human actor, processes visual data using a deep learning model, and publishes detected pose keypoints as native ROS2 messages.
+
+The system was developed and tested entirely within TheConstruct.ai ROS2 simulation environment, enabling safe, repeatable experimentation without physical hardware.
 
 Objectives:
-- Develop a ROS2 workspace with a custom maze world.
-- Integrate multiple sensors (LIDAR, IMU).
-- Implement autonomous navigation and obstacle avoidance.
-- Provide Human–Robot Interaction (HRI) via teleoperation.
-- Design a **Finite State Machine (FSM)** to control behaviour.
-- Evaluate robustness with multiple test runs.
+- Design a ROS2-based perception pipeline for pose estimation
+- Integrate a YOLOv8-Pose deep learning model into a ROS2 node
+- Simulate a mobile robot equipped with an RGB camera in Gazebo
+- Perform real-time human keypoint detection from camera data
+- Publish detected keypoints using ROS2 messages (PoseArray)
+- Visualise perception outputs using RViz2
