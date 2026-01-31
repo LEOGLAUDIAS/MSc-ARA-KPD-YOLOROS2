@@ -5,7 +5,7 @@ This project demonstrates the integration of YOLOv8-Pose with ROS2 Humble to per
 
 The system was developed and tested entirely within TheConstruct.ai ROS2 simulation environment, enabling safe, repeatable experimentation without physical hardware.
 
-Objectives:
+Objectives:-
 - Design a ROS2-based perception pipeline for pose estimation
 - Integrate a YOLOv8-Pose deep learning model into a ROS2 node
 - Simulate a mobile robot equipped with an RGB camera in Gazebo
